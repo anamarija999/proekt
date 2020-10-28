@@ -6,33 +6,32 @@
         <title>Anketa_za_feedback</title>
     </head>
     <style type="text/css">
-    body{background-color:lavenderblush;}
-    .background{background-color:lightyellow;}
-    header{font-size:x-large;color:saddlebrown;text-align: center;font-weight: bold;}
+    body{background-color:lavenderblush;background-image: url('survey.jpg');}
+    
+    h1{font-size:x-large;color:saddlebrown;text-align: center;font-weight: bold;background-color: lightyellow;}
+    .margin{margin-left: 300px;margin-top: 170px;}
 </style>
 </html>
 
 <body>
-    <header>АНКЕТА ЗА САМОЕВАЛУАЦИЈА</header>
-    <h3 class="background">Ве молам пополнете ја оваа анкета за подобрување на web страната.</h3>
-    <form method="POST" action="mailto:ana_marija_trajkovska@hotmail.com">
+    
+    <br><h1 >Aнкета за подобрување на web страната.</h1>
+    <form class="margin"method="POST" action="mailto:ana_marija_trajkovska@hotmail.com">
        
        <h4><label>ИМЕ:
         <input name = "name" type = "text" size = "25"
         maxlength = "30" required>
         </label></h4>
-        <input type="submit">
-        <input type="reset">
+        
         <h4><label>ПРЕЗИМЕ:
             <input name = "surname" type = "text" size = "30"
             maxlength = "35" required>
             </label></h4>
-            <input type="submit">
-            <input type="reset">
+            
 
           <h4> <label for="birthday">Возраст:</label></h4> 
             <input type="date" id="birthday" name="birthday">
-            <input type="submit" value="Submit">
+            
 
             <h4><label>ПОЛ:<br>
             
@@ -43,8 +42,7 @@
                 <input type="radio" id="other" name="gender" value="other">
                 <label for="other">Друго</label>
             </h4></label>
-            <input type="submit">
-            <input type="reset">
+         
 
     <label for="category"><h4>Одбери најкорисна категорија:</h4></label>
   <select id="category" name="category" required>
@@ -61,16 +59,17 @@
   <label for="vehicle2"> Блог за рецепти</label><br>
   <input type="checkbox" id="3" name="choise3" value="Блог за музика,книги">
   <label for="vehicle3">Блог за музика,книги,филмови</label><br><br>
-  <input type="submit" value="Submit">
-
+ 
   <h4>Внесете оценка за странава</h4>
   <label for="vol"><h4>Оценка(помеѓу 0 и 10):</h4></label>
   <input type="range" id="vol" name="vol" min="0" max="10">
-  <input type="submit" value="Submit">
+ 
     <h4><label for="web">Коментар:</label></h4>
 <textarea id="wеб" name="wеб" rows="10" cols="50">
   Секој коментар е добредојден.
   </textarea>
   <br><br>
-  <input type="submit" value="Submit">
+
+  <input type="submit">
+        <input type="reset">
     </body>
