@@ -6,22 +6,33 @@
   <title>MY_FAVOURITE_THINGS</title>
   <style type="text/css">
   li{font-size:medium;font-weight:bold;color:saddlebrown;}
-  em{font-size:large;font-weight:bold;background-color:lightyellow;}
-  header{font-weight:bold; color:palevioletred; font-size:xx-large; text-align:center;background-color: lightyellow;}
+
+  em{font-size:large;font-weight:bold;background-color:lightyellow;font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+  header{font-weight:bold; color:palevioletred; ; text-align:center; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: xx-large;background-color: lightyellow;}
   .i{margin-left:20px;margin-right: 20px;border-style:double;border-color: crimson;}
+
   body{background-color:lavenderblush;background-image: url('kat.jpg');}
-  .floated2{float:right;text-align: center; font-size:large;position:left;margin-right: 3cm;}
+  
   .container {
   position: relative;
   width: 50%;
-}
+  }
+  section{
+        text-align: start;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: large;
+        font-weight:bold;
+        font-style: italic;}
+
 
 .image {
   display: block;
   width: 274px;
   height: 183px;
-  margin-left: 30px;
-  margin-top: 10px;
+  margin-left: 40px;
+  margin-top: 30px;
+  margin-right:40px;
   border-style: double;
 }
 
@@ -32,10 +43,10 @@
   right: 0;
   background-color: #db6a9fa9;
   overflow: hidden;
-  width: 280px;
+  width: 274px;
   height: 0px;
   transition: .5s ease;
-  margin-left: 30px;
+  margin-left: 40px;
 }
 
 .container:hover .overlay {
@@ -55,18 +66,73 @@
   -ms-transform: translate(-50%, -50%);
 }
 
+       </style>
+       </head>
 
- 
-    </style>
-  </head>
 
   <body>
       <header>
-          <p>Категории</p>
+          <p >Категории</p>
       </header>
-     
+     <section id="2" style="float: right;"> <em>ХРАНА:</em>
+        <div class="container">
+            <img src="chia (2).jpg" alt="Link" class="image">
+            <div class="overlay">
+              <div class="text">Вега</div>
+            </div>
+          </div>
+          <div class="container">
+            <img src="burger.jpg" alt="Link" class="image">
+            <div class="overlay">
+              <div class="text">Рок Рустикана</div>
+            </div>
+          </div>
+          <div class="container">
+            <img src="curry.jpg" alt="Berlin" class="image">
+            <div class="overlay">
+              <div class="text">Кантина</div>
+            </div>
+          </div>
+          <div class="container">
+            <img src="mexican.jpg" alt="Berlin" class="image">
+            <div class="overlay">
+              <div class="text">Амигос</div>
+            </div>
+          </div>
+        
+    </section>
     
-        <p><em>КНИГИ:</em></p>
+     
+      <em>ГРАДОВИ:</em><br>
+
+    <div class="container">
+        <img src="berlin.jpg" alt="Berlin" class="image">
+        <div class="overlay">
+          <div class="text">Берлин</div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="firenca (2).jpg" alt="Firenca" class="image">
+        <div class="overlay">
+          <div class="text">Фиренца</div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="cairo.jpg" alt="Berlin" class="image">
+        <div class="overlay">
+          <div class="text">Каиро</div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="ohrid.jpg" alt="Berlin" class="image">
+        <div class="overlay">
+          <div class="text">Охрид</div>
+        </div>
+      </div>
+    
+        
+            
+        <br><p><em>КНИГИ:</em></p>
 
             <p>
         <a href="https://kupikniga.mk/product/drugiot-ajnshtajn/">
@@ -129,52 +195,50 @@
                                         </a>
 
 </p>  
-<br><em class="floated2">МУЗИКА:</em></br>
+
+<section id="3" style="float:right;"><br><em >МУЗИКА:</em></br>
       <ol>
-          <li>Cabo</li>
-          <iframe width="420" height="345" src="https://www.youtube.com/watch?v=MrVt3ywiuDo">
+          <li>Personal Jesus</li>
+          <iframe width="300" height="184" src="https://www.youtube.com/embed/FYH8DsU2WCk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </iframe>
+          <li>Starry night</li>
+          <iframe width="300" height="184" src="https://www.youtube.com/embed/kD0en6bbJPI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </iframe>
           <li>Frka</li>
-          <iframe width="420" height="345" src="https://www.youtube.com/watch?v=2pfLE5YJ1Fo">
+          <iframe width="300" height="184" src="https://www.youtube.com/embed/2pfLE5YJ1Fo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </iframe>
-          <li>Frojd e zhiv</li>
-          <iframe width="420" height="345" src="https://www.youtube.com/watch?v=3dkXdBsDXWo">
+          <li>Blue Monday</li>
+          <iframe width="300" height="184" src="https://www.youtube.com/embed/FYH8DsU2WCk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </iframe>
-          <li>Personal jesus</li>
-          <iframe width="420" height="345" src="https://www.youtube.com/watch?v=u1xrNaTO1bI">
-          </iframe>
+      </ol>
+    </section>
 
-
-   
-                           
-
-
-</p>  
-    <em>ГРАДОВИ:</em><br>
+<br><em>ИЗВЕДУВАЧИ:</em>
     <div class="container">
-        <img src="berlin.jpg" alt="Berlin" class="image">
+        <img src="depechemode.jpg" alt="Link" class="image">
         <div class="overlay">
-          <div class="text">Берлин</div>
+          <div class="text">Depeche Mode</div>
         </div>
       </div>
       <div class="container">
-        <img src="firenca (2).jpg" alt="Firenca" class="image">
+        <img src="peggy.jpg" alt="Link" class="image">
         <div class="overlay">
-          <div class="text">Фиренца</div>
+          <div class="text">Peggy Gou</div>
         </div>
       </div>
       <div class="container">
-        <img src="cairo.jpg" alt="Berlin" class="image">
+        <img src="nipplepeople.jpg" alt="Berlin" class="image">
         <div class="overlay">
-          <div class="text">Каиро</div>
+          <div class="text">Nipplepeople</div>
         </div>
       </div>
       <div class="container">
-        <img src="ohrid.jpg" alt="Berlin" class="image">
+        <img src="neworder.jpeg" alt="Berlin" class="image">
         <div class="overlay">
-          <div class="text">Охрид</div>
+          <div class="text">New Order</div>
         </div>
       </div>
- 
-      
-  </body>
+    
+
+ </body>
+ </html>
