@@ -1,244 +1,284 @@
 <!DOCTYPE html>
 
 <html>
- <head>
+
+<head>
   <meta charset="utf-8">
   <title>MY_FAVOURITE_THINGS</title>
+
   <style type="text/css">
-  li{font-size:medium;font-weight:bold;color:saddlebrown;}
+    li {
+      font-size: medium;
+      font-weight: bold;
+      color: saddlebrown;
+    }
 
-  em{font-size:large;font-weight:bold;background-color:lightyellow;font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    em {
+      font-size: large;
+      font-weight: bold;
+      background-color: lightyellow;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
 
-  header{font-weight:bold; color:palevioletred; ; text-align:center; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: xx-large;background-color: lightyellow;}
-  .i{margin-left:20px;margin-right: 20px;border-style:double;border-color: crimson;}
+    header {
+      font-weight: bold;
+      color: palevioletred;
+      ;
+      text-align: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: xx-large;
+      background-color: lightyellow;
+    }
 
-  body{background-color:lavenderblush;background-image: url('kat.jpg');}
-  
-  .container {
-  position: relative;
-  width: 50%;
-  }
-  section{
-        text-align: start;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: large;
-        font-weight:bold;
-        font-style: italic;}
+    .i {
+      margin-left: 20px;
+      margin-right: 20px;
+      border-style: double;
+      border-color: crimson;
+    }
 
+    body {
+      background-color: lavenderblush;
+      background-image: url('kat.jpg');
+    }
 
-.image {
-  display: block;
-  width: 274px;
-  height: 183px;
-  margin-left: 40px;
-  margin-top: 30px;
-  margin-right:40px;
-  border-style: double;
-}
+    .container {
+      position: relative;
+      width: 50%;
+    }
 
-.overlay {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  background-color: #db6a9fa9;
-  overflow: hidden;
-  width: 274px;
-  height: 0px;
-  transition: .5s ease;
-  margin-left: 40px;
-}
-
-.container:hover .overlay {
-  bottom: 0;
-  height: 183px;
-}
-
-.text {
-  white-space: nowrap; 
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-       </style>
-       </head>
+    section {
+      text-align: start;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: large;
+      font-weight: bold;
+      font-style: italic;
+    }
 
 
-  <body>
-      <header>
-          <p >Категории</p>
-      </header>
-     <section id="2" style="float: right;"> <em>ХРАНА:</em>
-        <div class="container">
-            <img src="chia (2).jpg" alt="Link" class="image">
-            <div class="overlay">
-              <div class="text">Вега</div>
-            </div>
-          </div>
-          <div class="container">
-            <img src="burger.jpg" alt="Link" class="image">
-            <div class="overlay">
-              <div class="text">Рок Рустикана</div>
-            </div>
-          </div>
-          <div class="container">
-            <img src="curry.jpg" alt="Berlin" class="image">
-            <div class="overlay">
-              <div class="text">Кантина</div>
-            </div>
-          </div>
-          <div class="container">
-            <img src="mexican.jpg" alt="Berlin" class="image">
-            <div class="overlay">
-              <div class="text">Амигос</div>
-            </div>
-          </div>
-        
-    </section>
-    
-     
-      <em>ГРАДОВИ:</em><br>
+    .image {
+      display: block;
+      width: 274px;
+      height: 183px;
+      margin-left: 40px;
+      margin-top: 30px;
+      margin-right: 40px;
+      border-style: double;
+    }
 
+    .overlay {
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      right: 0;
+      background-color: #db6a9fa9;
+      overflow: hidden;
+      width: 274px;
+      height: 0px;
+      transition: .5s ease;
+      margin-left: 40px;
+    }
+
+    .container:hover .overlay {
+      bottom: 0;
+      height: 183px;
+    }
+
+    .text {
+      white-space: nowrap;
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+
+
+<body>
+  <header>
+    <p>Категории</p>
+  </header>
+  <section id="2" style="float: right;"> <em>ХРАНА:</em>
     <div class="container">
-        <img src="berlin.jpg" alt="Berlin" class="image">
-        <div class="overlay">
-          <div class="text">Берлин</div>
-        </div>
+      <img src="chia (2).jpg" alt="Link" class="image">
+      <div class="overlay">
+        <div class="text">Вега</div>
       </div>
-      <div class="container">
-        <img src="firenca (2).jpg" alt="Firenca" class="image">
-        <div class="overlay">
-          <div class="text">Фиренца</div>
-        </div>
+    </div>
+    <div class="container">
+      <img src="burger.jpg" alt="Link" class="image">
+      <div class="overlay">
+        <div class="text">Рок Рустикана</div>
       </div>
-      <div class="container">
-        <img src="cairo.jpg" alt="Berlin" class="image">
-        <div class="overlay">
-          <div class="text">Каиро</div>
-        </div>
+    </div>
+    <div class="container">
+      <img src="curry.jpg" alt="Berlin" class="image">
+      <div class="overlay">
+        <div class="text">Кантина</div>
       </div>
-      <div class="container">
-        <img src="ohrid.jpg" alt="Berlin" class="image">
-        <div class="overlay">
-          <div class="text">Охрид</div>
-        </div>
+    </div>
+    <div class="container">
+      <img src="mexican.jpg" alt="Berlin" class="image">
+      <div class="overlay">
+        <div class="text">Амигос</div>
       </div>
-    
-        
-            
-        <br><p><em>КНИГИ:</em></p>
+    </div>
 
-            <p>
-        <a href="https://kupikniga.mk/product/drugiot-ajnshtajn/">
-            <img class="i" src="drugiooot.jpg" width="150" height="200" alt="Drugiot Ajnshtajn">
-        </a>
-        <a href="https://sakamknigi.mk/product/na-rab-na-ludilo/">
-            <img class="i" src="na.jpg" width="150" height="200" alt="Na rab na ludilo">
-                </a>
-                <a href="https://sakamknigi.mk/product/nekoj-sto-vredi-da-umre/">
-                    <img class="i" src="nekoj.jpg" width="150" height="200" alt="Nekoj sto vredi da umre">
-                        </a>
-                        <a href="https://sakamknigi.mk/product/devojkata-pred-mene/">
-                            <img class="i" src="girl.jpg" width="150" height="200" alt="Devojkata pred mene">
-                                </a>
+  </section>
 
-    </p>
-      
-    <p><em>СЕРИИ:</em></p>
-    <p>
-<a href="https://www.imdb.com/title/tt0108778/">
-    <img class="i" src="friends.jpg" width="150" height="200" alt="Friends">
-</a>
-<a href="https://www.imdb.com/title/tt4052886/">
-    <img class="i" src="lucifer.jpg" width="150" height="200" alt="Lucifer">
-        </a>
-        <a href="https://www.imdb.com/title/tt0898266/">
-            <img class="i" src="bigbang.jpg" width="150" height="200" alt="Big Bang Theory">
-                </a>
-                <a href="https://www.imdb.com/title/tt0460649/">
-                    <img class="i" src="hwm.jpg" width="150" height="200" alt="How i met your mother">
-                        </a>
-                        <a href="https://www.imdb.com/title/tt7366338/">
-                            <img class="i" src="cernobil.jpg" width="150" height="200" alt="Cernobil">
-                                </a>
 
-</p>  
+  <em>ГРАДОВИ:</em><br>
 
-<p><em>ФИЛМОВИ:</em></p>
-<p>
-<a href="https://www.imdb.com/title/tt0332280/">
-<img class="i" src="notebook.jpg" width="150" height="200" alt="Notebook">
-</a>
-<a href="https://www.imdb.com/title/tt0091635/">
-<img class="i" src="nine.jpg" width="150" height="200" alt="NineandHalf">
+  <div class="container">
+    <img src="berlin.jpg" alt="Berlin" class="image">
+    <div class="overlay">
+      <div class="text">Берлин</div>
+    </div>
+  </div>
+  <div class="container">
+    <img src="firenca (2).jpg" alt="Firenca" class="image">
+    <div class="overlay">
+      <div class="text">Фиренца</div>
+    </div>
+  </div>
+  <div class="container">
+    <img src="cairo.jpg" alt="Berlin" class="image">
+    <div class="overlay">
+      <div class="text">Каиро</div>
+    </div>
+  </div>
+  <div class="container">
+    <img src="ohrid.jpg" alt="Berlin" class="image">
+    <div class="overlay">
+      <div class="text">Охрид</div>
+    </div>
+  </div>
+
+
+
+  <br>
+  <p><em>КНИГИ:</em></p>
+
+  <p>
+    <a href="https://kupikniga.mk/product/drugiot-ajnshtajn/">
+      <img class="i" src="drugiooot.jpg" width="150" height="200" alt="Drugiot Ajnshtajn">
+    </a>
+    <a href="https://sakamknigi.mk/product/na-rab-na-ludilo/">
+      <img class="i" src="na.jpg" width="150" height="200" alt="Na rab na ludilo">
+    </a>
+    <a href="https://sakamknigi.mk/product/nekoj-sto-vredi-da-umre/">
+      <img class="i" src="nekoj.jpg" width="150" height="200" alt="Nekoj sto vredi da umre">
+    </a>
+    <a href="https://sakamknigi.mk/product/devojkata-pred-mene/">
+      <img class="i" src="girl.jpg" width="150" height="200" alt="Devojkata pred mene">
+    </a>
+
+  </p>
+
+  <p><em>СЕРИИ:</em></p>
+  <p>
+    <a href="https://www.imdb.com/title/tt0108778/">
+      <img class="i" src="friends.jpg" width="150" height="200" alt="Friends">
+    </a>
+    <a href="https://www.imdb.com/title/tt4052886/">
+      <img class="i" src="lucifer.jpg" width="150" height="200" alt="Lucifer">
+    </a>
+    <a href="https://www.imdb.com/title/tt0898266/">
+      <img class="i" src="bigbang.jpg" width="150" height="200" alt="Big Bang Theory">
+    </a>
+    <a href="https://www.imdb.com/title/tt0460649/">
+      <img class="i" src="hwm.jpg" width="150" height="200" alt="How i met your mother">
+    </a>
+    <a href="https://www.imdb.com/title/tt7366338/">
+      <img class="i" src="cernobil.jpg" width="150" height="200" alt="Cernobil">
+    </a>
+
+  </p>
+
+  <p><em>ФИЛМОВИ:</em></p>
+  <p>
+    <a href="https://www.imdb.com/title/tt0332280/">
+      <img class="i" src="notebook.jpg" width="150" height="200" alt="Notebook">
+    </a>
+    <a href="https://www.imdb.com/title/tt0091635/">
+      <img class="i" src="nine.jpg" width="150" height="200" alt="NineandHalf">
     </a>
     <a href="https://www.imdb.com/title/tt7286456/">
-        <img class="i" src="joker.jpg" width="150" height="200" alt="Joker">
-            </a>
-            <a href="https://www.imdb.com/title/tt2294629/">
-                <img class="i" src="frozen.jpg" width="150" height="200" alt="Frozen">
-                    </a>
-                    <a href="https://www.imdb.com/title/tt0103772/">
-                        <img class="i" src="basic.jpg" width="150" height="200" alt="Basic instict">
-                            </a>
-                            <a href="https://www.imdb.com/title/tt3521164/">
-                                <img class="i"src="moana.jpg" width="150" height="200" alt="Мoana">
-                                </a>
-                                <a href="https://www.imdb.com/title/tt2096673/">
-                                    <img class="i" src="inside.jpg" width="150" height="200" alt="Inside Out">
-                                        </a>
+      <img class="i" src="joker.jpg" width="150" height="200" alt="Joker">
+    </a>
+    <a href="https://www.imdb.com/title/tt2294629/">
+      <img class="i" src="frozen.jpg" width="150" height="200" alt="Frozen">
+    </a>
+    <a href="https://www.imdb.com/title/tt0103772/">
+      <img class="i" src="basic.jpg" width="150" height="200" alt="Basic instict">
+    </a>
+    <a href="https://www.imdb.com/title/tt3521164/">
+      <img class="i" src="moana.jpg" width="150" height="200" alt="Мoana">
+    </a>
+    <a href="https://www.imdb.com/title/tt2096673/">
+      <img class="i" src="inside.jpg" width="150" height="200" alt="Inside Out">
+    </a>
 
-</p>  
+  </p>
 
-<section id="3" style="float:right;"><br><em >МУЗИКА:</em></br>
-      <ol>
-          <li>Personal Jesus</li>
-          <iframe width="300" height="184" src="https://www.youtube.com/embed/u1xrNaTO1bI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-          </iframe>
-          <li>Starry night</li>
-          <iframe width="300" height="184" src="https://www.youtube.com/embed/kD0en6bbJPI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </iframe>
-          <li>Frka</li>
-          <iframe width="300" height="184" src="https://www.youtube.com/embed/2pfLE5YJ1Fo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </iframe>
-          <li>Blue Monday</li>
-          <iframe width="300" height="184" src="https://www.youtube.com/embed/FYH8DsU2WCk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </iframe>
-      </ol>
-    </section>
+  <section id="3" style="float:right;"><br><em>МУЗИКА:</em></br>
+    <ol>
+      <li>Personal Jesus</li>
+      <iframe width="300" height="184" src="https://www.youtube.com/embed/u1xrNaTO1bI" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+      <li>Starry night</li>
+      <iframe width="300" height="184" src="https://www.youtube.com/embed/kD0en6bbJPI" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      </iframe>
+      <li>Frka</li>
+      <iframe width="300" height="184" src="https://www.youtube.com/embed/2pfLE5YJ1Fo" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      </iframe>
+      <li>Blue Monday</li>
+      <iframe width="300" height="184" src="https://www.youtube.com/embed/FYH8DsU2WCk" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      </iframe>
+    </ol>
+  </section>
 
-<br><em>ИЗВЕДУВАЧИ:</em>
-    <div class="container">
-        <img src="depechemode.jpg" alt="Link" class="image">
-        <div class="overlay">
-          <div class="text">Depeche Mode</div>
-        </div>
-      </div>
-      <div class="container">
-        <img src="peggy.jpg" alt="Link" class="image">
-        <div class="overlay">
-          <div class="text">Peggy Gou</div>
-        </div>
-      </div>
-      <div class="container">
-        <img src="nipplepeople.jpg" alt="Berlin" class="image">
-        <div class="overlay">
-          <div class="text">Nipplepeople</div>
-        </div>
-      </div>
-      <div class="container">
-        <img src="neworder.jpeg" alt="Berlin" class="image">
-        <div class="overlay">
-          <div class="text">New Order</div>
-        </div>
-      </div>
-    
+  <br><em>ИЗВЕДУВАЧИ:</em>
+  <div class="container">
+    <img src="depechemode.jpg" alt="Link" class="image">
+    <div class="overlay">
+      <div class="text">Depeche Mode</div>
+    </div>
+  </div>
+  <div class="container">
+    <img src="peggy.jpg" alt="Link" class="image">
+    <div class="overlay">
+      <div class="text">Peggy Gou</div>
+    </div>
+  </div>
+  <div class="container">
+    <img src="nipplepeople.jpg" alt="Berlin" class="image">
+    <div class="overlay">
+      <div class="text">Nipplepeople</div>
+    </div>
+  </div>
+  <div class="container">
+    <img src="neworder.jpeg" alt="Berlin" class="image">
+    <div class="overlay">
+      <div class="text">New Order</div>
+    </div>
+  </div>
 
- </body>
- </html>
+
+
+</body>
+
+</html>

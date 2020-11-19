@@ -4,68 +4,171 @@
 
 <head>
 
-<meta charset = "utf-8">
-<title>MY_GALLERY</title>
-<style type="text/css">
-header{background-color: rgba(255, 255, 224, 0.603);font-weight:bold;font-size:xx-large;color: crimson;text-align:center;height:3cm;}
+  <meta charset="utf-8">
+  <title>MY_GALLERY</title>
 
-div.gallery {
-    margin: 40px;
-    border: 1px solid #ccc;
-    float: left;
-    background-color:rgba(255, 255, 224, 0.603)
-    
-  }
-  
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
-  
-  div.gallery img {
-    width: 100%;
-    height: auto;
-    background-color: rgba(255,255,224,0.603)
-  }
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
-  }
-em{text-align: center;font-size: medium;background-color:rgba(255,255,224,0.603);color:crimson}
-body{background-image: url('insta.jpg');}
-</style>
+  <script type="text/javascript">
+
+    function onClick(postId) {
+      document.getElementById("clicks" + postId).innerHTML = parseInt(document.getElementById("clicks" + postId).innerHTML) + 1
+
+    };
+
+   
+  </script>
+  <script>
+
+function AddComment(){
+   
+		var x = document.getElementById("FirstComment").value;
+		
+		document.getELementById("comments").innerHTML = x;
+		}
+var komentari="";
+var name = window.prompt("Внесете го вашето име:")
+		function updateComment() {
+  var x = document.getElementById("text").value;
+	komentari +=  name + " : " + x + "\n";
+  document.getElementById("pom").innerHTML = komentari;
+}
+  </script>
+  <style type="text/css">
+    header {
+      background-color: rgba(255, 255, 224, 0.603);
+      font-weight: bold;
+      font-size: xx-large;
+      color: crimson;
+      text-align: center;
+      height: 3cm;
+    }
+
+    div.gallery {
+      margin: 40px;
+      border: 1px solid #ccc;
+      float: left;
+      background-color: rgba(255, 255, 224, 0.603)
+    }
+
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+
+    div.gallery img {
+
+      width: 100%;
+      height: auto;
+      background-color: rgba(255, 255, 224, 0.603)
+    }
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+    em {
+      text-align: center;
+      font-size: medium;
+      background-color: rgba(255, 255, 224, 0.603);
+      color: crimson
+    }
+
+    .p {
+      font-size: large;
+      font-weight: bold;
+      margin-left: 15px;
+    }
+
+    body {
+      background-image: url('insta.jpg');
+    }
+
+    .button {
+      background-color: crimson;
+      border: 1px solid black;
+      color: white;
+      padding: 10px 24px;
+      text-align: center;
+      font-size: 16px;
+      margin: 4px 2px;
+      opacity: 0.6;
+      transition: 0.3s;
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 60px;
+      float: left;
+      margin-left: 60px;
+    }
+
+    .button:hover {
+      opacity: 1
+    }
+  </style>
 </head>
-<body>
-  <br><header><br>
-      Mојата мала галерија
-  </header>
 
-  <div class="gallery">
-    <a target="_blank" href="1.jpg">
-      <img src="1.jpg" alt="Nema slika" >
-    </a>
-    <div class="desc"><em>Бадемов колач со теа.</em></div>
-  </div>
-  
-  <div class="gallery">
-    <a target="_blank" href="2.jpg">
-      <img src="2.jpg" alt="Forest">
-    </a>
-    <div class="desc"><em>Oхрид и сонце.</em></div>
-  </div>
-  
-  <div class="gallery">
-    <a target="_blank" href="3.jpg">
-      <img src="3.jpg" alt="Northern Lights">
-    </a>
-    <div class="desc"><em>Факултет.</em></div>
-  </div>
-  <div class="gallery">
-    <a target="_blank" href="4.jpg">
-      <img src="4.jpg"  alt="Lights" >
-    </a>
-    <div class="desc"><em>Последното патување.</em></div>
-  </div>
+<body>
+
+  <br>
+  <header><br>
+    Mојата мала галерија
+
+  </header>
+  <section>
+    <div class="gallery">
+      <a target="_blank" href="1.jpg">
+        <img src="1.jpg" alt="Nema slika">
+      </a>
+      <div class="desc"><em>Бадемов колач со теа.</em></div>
+
+      <button class="button" type="button" onClick="onClick(1)">Like</button>
+      <p class="p">Likes: <a id="clicks1">0</a></p>
+
+
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="2.jpg">
+        <img src="2.jpg" alt="Forest">
+      </a>
+      <div class="desc"><em>Oхрид и сонце.</em></div>
+
+      <button class="button" type="button" onClick="onClick(2)">Like</button>
+      <p class="p">Likes: <a id="clicks2">0</a></p>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="3.jpg">
+        <img src="3.jpg" alt="Northern Lights">
+      </a>
+      <div class="desc"><em>Факултет.</em></div>
+
+      <button class="button" type="button" onClick="onClick(3)">Like</button>
+      <p class="p">Likes: <a id="clicks3">0</a></p>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="4.jpg">
+        <img src="4.jpg" alt="Lights">
+      </a>
+
+      <div class="desc"><em>Последното патување.</em></div>
+
+      <button class="button" type="button" onClick="onClick(4)">Like</button>
+      <p class="p">Likes: <a id="clicks4">0</a></p>
+    </div>
+  </section>
+  <table>
+    <tr>
+      <td>
+          <input type="text" id="text" value="Comment...">
+          <button class="button" onclick="updateComment()">Post</button>
+          <p id="pom"></p>
+        </td>
+  </tr>
+ </table>
+ 
+
 
 </body>
+
 </html>

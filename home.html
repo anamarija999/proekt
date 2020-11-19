@@ -1,154 +1,361 @@
 <!DOCTYPE html>
 
 <html>
- <head>
+
+<head>
   <meta charset="utf-8">
   <title>MY_HOME_PAGE</title>
+  <script type="text/javascript">
+    var name;
+    name = window.prompt("Внесете го вашето име:");
+    document.writeln("<h1>Добрe дојде, " + name + " на мојата страна</h1>").innerHTML
+  </script>
   <style type="text/css">
+    header {
+      background-color: lightyellow;
+    }
 
-     header{background-color:lightyellow;}
-     
-     em   {font-weight: bold;background-color: lightyellow;}
-     h1   {color:saddlebrown;-webkit-text-stroke:2px saddlebrown; text-align: center;}
-     h3   { text-shadow: -2px 2px 6px ; text-align: center;} 
-     .article1 { font-weight:bold;text-align:Center ; width:25%; position:right;border-width:6px;background-color:lightyellow;border-style: double;border-color: crimson;}
-     .background {background-color:lightyellow; text-align: center; font-weight: bold}
-     
-     ul {font-size: large;margin-left: 100px;}
-     li{font-size:medium;}
-     span{color: black;font-size: .5em;position: relative;bottom:-1ex;}
-     .floated{background-color:lightyellow;float:right;text-align: center; margin-right: 5cm;font-size:medium;border-style:double;border-width:6px;border-color:crimson;}
-     .floated2{float:right;text-align: center; font-size:large;position:left;margin-right: 3cm;}
-     .floated3{float:left; font-size:medium;position:left;}
-     img {display: block;margin-left: auto;margin-right: auto;border-style:double;border-width:6px}
-     .ance{text-indent: 3em; }
-     summary{text-align:Center;}
-     body{background-image:url('home.jpg');}
-     li{font-weight:bold;}
-     
+    em {
+      font-weight: bold;
+      background-color: lightyellow;
+    }
 
-     nav{            font-weight: bold;
-                          color:rgb(160, 13, 13);
-                         border: 2px solid rgb(160, 13, 13);
-                         text-align: center;
-                         width: 95em;
-                         background-color:lightyellow;
-          }
-          nav ul {  display: none;
-            list-style: none;
-                 margin: 0;
-             padding: 0;}
-             nav:hover ul { display: block }
-             nav ul li { border-top: 2px solid rgb(160, 13, 13);
-                            background-color: white;
-                        width:95em;
-                         color: black; }
-              nav ul li:hover { background-color: rosybrown; }
-              a { text-decoration: none; }
+    h1 {
+      color: saddlebrown;
+      -webkit-text-stroke: 2px saddlebrown;
+      text-align: center;
+    }
 
-     
- </style>
- </head>
+    h3 {
+      text-shadow: -2px 2px 6px;
+      text-align: center;
+    }
 
- <body>
+    .article1 {
+      font-weight: bold;
+      text-align: Center;
+      width: 25%;
+      position: right;
+      border-width: 6px;
+      background-color: lightyellow;
+      border-style: double;
+      border-color: crimson;
+    }
 
-     <header>
+    .background {
+      background-color: lightyellow;
+      text-align: center;
+      font-weight: bold
+    }
 
-        <h1>&#42ДОБРЕДОЈДОВТЕ НА МОЈАТА СТРАНА&#42</h1>
-        <h3><em>ВИ БЛАГОДАРАМ ЗА ПОСЕТАТА&#10084</em></h3>
-    
-    </header>
-    <nav>Meни
-        <ul>
-        <li><a href = "home.html">Насловна</a></li>
-        <li><a href = "blog.html">Блог</a></li>
-        <li><a href = "kategorii.html">Категории</a></li>
-        <li><a href = "galerija.html">Галерија</a></li>
-        <li><a href = "anketa.html">Анкета за посетители</a></li>
-     </ul>
-     </nav>
+    ul {
+      font-size: large;
+      margin-left: 100px;
+    }
 
-    <section id="2">
+    li {
+      font-size: medium;
+    }
 
-        <article class="floated"><b>Koнтакт форма</b></article>
-             
-       <div class="article1">
+    span {
+      color: black;
+      font-size: .5em;
+      position: relative;
+      bottom: -1ex;
+    }
 
-     <article>Ана Марија Трајковска</article>
+    .floated {
+      background-color: lightyellow;
+      float: right;
+      text-align: center;
+      margin-right: 5cm;
+      font-size: medium;
+      border-style: double;
+      border-width: 6px;
+      border-color: crimson;
+    }
 
-       </div>
+    .floated2 {
+      float: right;
+      text-align: center;
+      font-size: large;
+      position: left;
+      margin-right: 3cm;
+    }
 
-       <div class="floated2">
+    .floated3 {
+      float: left;
+      font-size: medium;
+      position: left;
+    }
 
-       <p><label><b>&#9993Email:</label></b><a href="mailto:ana_marija_trajkovska@hotmail.com" >  ana_marija_trajkovska</a></p>
-       <p><label><b>&#9990Телефон:</label></b>+389 71 330 839 </p>
-       <p><label><b>&#128247Instagram:</label></b><a href="https://www.instagram.com/amtrajkovska/?hl=en" >amtrajkovska</a></p>
-       <p><label><b>&#128172Facebook:</label></b><a href="https://www.facebook.com/anamarija.trajkovska1/" >  facebook профил</a></p>
-       <p><label><b>&#128205Адреса:</label></b>Скопје,Христо Татарчев 47-а</a></p>
-       
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-style: double;
+      border-width: 6px
+    }
 
-       </div>
-       <div class="floated3">
-       <ul ><em>ЕДУКАЦИЈА:</em>
-        
-              <li>ФЕИТ</li>
-              <li>2017-Ceгашност</li>
-    
+    .ance {
+      text-indent: 3em;
+    }
+
+    summary {
+      text-align: Center;
+    }
+
+    body {
+      background-image: url('home.jpg');
+    }
+
+    li {
+      font-weight: bold;
+    }
+
+
+    nav {
+      font-weight: bold;
+      color: rgb(160, 13, 13);
+      border: 2px solid rgb(160, 13, 13);
+      text-align: center;
+      width: 95em;
+      background-color: lightyellow;
+    }
+
+    nav ul {
+      display: none;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav:hover ul {
+      display: block
+    }
+
+    nav ul li {
+      border-top: 2px solid rgb(160, 13, 13);
+      background-color: white;
+      width: 95em;
+      color: black;
+    }
+
+    nav ul li:hover {
+      background-color: rosybrown;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .open-button {
+      background-color: #555;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      opacity: 0.8;
+      position: fixed;
+      bottom: 23px;
+      right: 28px;
+      width: 280px;
+    }
+
+    .open-button {
+      background-color: #555;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      opacity: 0.8;
+      position: fixed;
+      bottom: 23px;
+      right: 28px;
+      width: 280px;
+    }
+
+    .chat-popup {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      right: 15px;
+      border: 3px solid #f1f1f1;
+      z-index: 9;
+    }
+
+    .form-container {
+      max-width: 300px;
+      padding: 10px;
+      background-color: white;
+    }
+
+    .form-container textarea {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: none;
+      background: #f1f1f1;
+      resize: none;
+      min-height: 200px;
+    }
+
+    .form-container textarea:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+
+    .form-container .btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom: 10px;
+      opacity: 0.8;
+    }
+
+    .form-container .cancel {
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h3><em>ВИ БЛАГОДАРАМ ЗА ПОСЕТАТА&#10084</em></h3>
+
+  </header>
+  <nav>Meни
+    <ul>
+      <li><a href="home.html">Насловна</a></li>
+      <li><a href="blog.html">Блог</a></li>
+      <li><a href="kategorii.html">Категории</a></li>
+      <li><a href="galerija.html">Галерија</a></li>
+      <li><a href="anketa.html">Анкета за посетители</a></li>
+    </ul>
+  </nav>
+
+  <section id="2">
+
+    <article class="floated"><b>Koнтакт форма</b></article>
+
+    <div class="article1">
+
+      <article>Ана Марија Трајковска</article>
+
+    </div>
+
+    <div class="floated2">
+
+      <p><label><b>&#9993Email:</label></b><a href="mailto:ana_marija_trajkovska@hotmail.com"> ana_marija_trajkovska</a>
+      </p>
+      <p><label><b>&#9990Телефон:</label></b>+389 71 330 839 </p>
+      <p><label><b>&#128247Instagram:</label></b><a
+          href="https://www.instagram.com/amtrajkovska/?hl=en">amtrajkovska</a></p>
+      <p><label><b>&#128172Facebook:</label></b><a href="https://www.facebook.com/anamarija.trajkovska1/"> facebook
+          профил</a></p>
+      <p><label><b>&#128205Адреса:</label></b>Скопје,Христо Татарчев 47-а</a></p>
+      <button class="open-button" onclick="openForm()">Пишете ми</button>
+
+      <div class="chat-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Пораки</h1>
+
+          <label for="msg"><b>Порака</b></label>
+          <textarea placeholder="Type message.." name="msg" required></textarea>
+
+          <button type="submit" class="btn">Прати</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Затвори</button>
+        </form>
+      </div>
+
+      <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+      </script>
+      <button onclick="document.getElementById('time').innerHTML=Date()">Колку е часот?</button>
+
+      <p id="time"></p>
+
+
+    </div>
+    <div class="floated3">
+      <ul><em>ЕДУКАЦИЈА:</em>
+
+        <li>ФЕИТ</li>
+        <li>2017-Ceгашност</li>
+
       </ul>
 
-         <ul><em>СМЕР:</em>
-            <li>КХИЕ</li>
-        </ul>
+      <ul><em>СМЕР:</em>
+        <li>КХИЕ</li>
+      </ul>
 
-        <ul><em>JАЗИЦИ:</em>
-            <li>AНГЛИСКИ</li>
-            <li>ШПАНСКИ</li>
-            <li>ГЕРМАНСКИ</li>
-            <li>ИТАЛИЈАНСКИ</li>
-         </ul>
+      <ul><em>JАЗИЦИ:</em>
+        <li>AНГЛИСКИ</li>
+        <li>ШПАНСКИ</li>
+        <li>ГЕРМАНСКИ</li>
+        <li>ИТАЛИЈАНСКИ</li>
+      </ul>
 
-         <ul><em>ХОБИ:</em>
-            <div></div>
-            <li>СПОРТУВАЊЕ</li>
-           <li>ЧИТАЊЕ КНИГИ</li>
-            <li>МАРАТОН ВО ГЛЕДАЊЕ СЕРИИ</li>
-            <li>ШОПИНГ</li>
-            <li>ГОТВЕЊЕ</li>
-         </ul>
+      <ul><em>ХОБИ:</em>
+        <div></div>
+        <li>СПОРТУВАЊЕ</li>
+        <li>ЧИТАЊЕ КНИГИ</li>
+        <li>МАРАТОН ВО ГЛЕДАЊЕ СЕРИИ</li>
+        <li>ШОПИНГ</li>
+        <li>ГОТВЕЊЕ</li>
+      </ul>
 
-         <ul><em>ВЕШТИНИ:</em>
-         <li>python,<span>signal and audio processing</span></li>
-         <li>matlab,<span>basic skills</span></li>
-         <li>or cad,<span>electronics soluction and design</span> </li>
-         <li>c,c++</li>
-         <li>Assembly</li>
+      <ul><em>ВЕШТИНИ:</em>
+        <li>python,<span>signal and audio processing</span></li>
+        <li>matlab,<span>basic skills</span></li>
+        <li>or cad,<span>electronics soluction and design</span> </li>
+        <li>c,c++</li>
+        <li>Assembly</li>
 
-        </ul>
+      </ul>
     </div>
-    <img  src="C:\Users\ana_m\OneDrive\Desktop\moja-slika.png" alt="No picture aviable" width="200" height="300">
+    <img src="C:\Users\ana_m\OneDrive\Desktop\4godina\proekt\moja-slika.png" alt="No picture aviable" width="200"
+      height="300">
 
     </article>
-    </section>
-    <details >
-        <summary><em>KOJA СУМ ЈАС?</em></summary>
+  </section>
+  <details>
+    <summary><em>KOJA СУМ ЈАС?</em></summary>
     <p class="ance">
-        <em>
-            Добредојдовте на мојата прва web страна.
-            Во овој текст ќе дознаете неколку интересни работи кои ме опишуваат мене и што сакам да правам јас.
-            Јас сум Ана Марија, 21 годишна девојка со  пасија за здрава храна, читање книги и се поврзано со музика.
-            Секој што ме познава знае дека сум многу отворена и дружељубива личност секогаш спремна за нови предизвици.
-            Живеам во Скопје, студирам и претпоставувам како и сите други обожавам да патувам.
-            Омилен град кој сум го посетила ми е Берлин,а од Македонија Охрид, дел од сликите од моите патувања може да ги погледнете во галеријата.
-            Слободното време најчесто го искористувам во готвење и испробување на нови рецепти, како и во трчање и планинарење.
-            Некои од рецептите ќе можете да ги погледнете на мојот блог.
-            Омилено место на факултетот ми е плава соба, особено во зимските денови.
-            Во кои мали нешта уживам намногу? Кога во многу ладен ден ќе останам цел ден во кревет со ќебе, во првата голтка кафе после напорен ден и во зајдисонца.
-            Уживам во добро излегување со моите пријатели кога dj-от ќе ми ја погоди музиката или во Маркана на dance подиумот.
-            Во поглед на стилот тој сеуште не ми е дефиниран но вообичаено носам црна облека.
-            Официјално добредојдовте и благодарам што ја посетивте странава, се надевам дека ќе уживате исто толку колку што јас уживам во креирање на истата.
-            
-        </em>
+      <em>
+        Добредојдовте на мојата прва web страна.
+        Во овој текст ќе дознаете неколку интересни работи кои ме опишуваат мене и што сакам да правам јас.
+        Јас сум Ана Марија, 21 годишна девојка со пасија за здрава храна, читање книги и се поврзано со музика.
+        Секој што ме познава знае дека сум многу отворена и дружељубива личност секогаш спремна за нови предизвици.
+        Живеам во Скопје, студирам и претпоставувам како и сите други обожавам да патувам.
+        Омилен град кој сум го посетила ми е Берлин,а од Македонија Охрид, дел од сликите од моите патувања може да ги
+        погледнете во галеријата.
+        Слободното време најчесто го искористувам во готвење и испробување на нови рецепти, како и во трчање и
+        планинарење.
+        Некои од рецептите ќе можете да ги погледнете на мојот блог.
+        Омилено место на факултетот ми е плава соба, особено во зимските денови.
+        Во кои мали нешта уживам намногу? Кога во многу ладен ден ќе останам цел ден во кревет со ќебе, во првата голтка
+        кафе после напорен ден и во зајдисонца.
+        Уживам во добро излегување со моите пријатели кога dj-от ќе ми ја погоди музиката или во Маркана на dance
+        подиумот.
+        Во поглед на стилот тој сеуште не ми е дефиниран но вообичаено носам црна облека.
+        Официјално добредојдовте и благодарам што ја посетивте странава, се надевам дека ќе уживате исто толку колку што
+        јас уживам во креирање на истата.
+
+      </em>
     </p>
-</details>
- </body>
+  </details>
+
+</body>
+
 </html>

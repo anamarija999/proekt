@@ -1,10 +1,123 @@
 <!DOCTYPE html>
 
 <html>
- <head>
-  <meta charset="utf-8">
-  <title>BLOG_FOR_COOKING_AND_TRAVEL_ENTHUSIASTS</title>
-  
- </head>
 
- 
+<head>
+  <meta charset="utf-8">
+  <title>BLOG</title>
+  <style>
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: crimson;
+      color: white;
+      text-align: center;
+    }
+
+    .p {
+      font-size: x-large;
+      font-weight: bold;
+      text-align: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      background-color: lightyellow;
+      color: crimson
+    }
+
+    .h {
+      font-size: x-large;
+      font-weight: bold;
+      width: 100%;
+      background-color: crimson;
+      color: white;
+      text-align: center;
+      height: 100px;
+    }
+
+    .pic {
+      width: 50%;
+      margin-top: 50px;
+      margin-left: 250px;
+      margin-bottom: 50px;
+    }
+
+    .border {
+      margin-bottom: 50px;
+      margin-top: 50px;
+    }
+  </style>
+  <div id="fb-root"></div>
+  <script type="text/javascript" async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/mk_MK/sdk.js#xfbml=1&version=v9.0" nonce="GqiN9FNZ"
+    src="https://connect.facebook.net/mk_MK/sdk.js#xfbml=1&version=v9.0" nonce="5tmGBmv8">
+
+    </script>
+  <script type="text/javascript">
+    function myFunction(tmp) {
+      var iframe = document.getElementById("myFrame" + tmp);
+      elmnt.style.display = "none";
+    };
+
+    function updateComment() {
+     document.getElementById("comments").innerHTML = document.getElementById("text").value;
+    
+    }
+
+  </script>
+
+  
+
+</head>
+
+<body>
+  <header class="h">
+    <strong>БЛОГ</strong>
+  </header>
+
+  <iframe class="border" id="myFrame" src="https://snestorovska.com/category/reczepti/"
+    style="height:500px;width:100%"></iframe>
+
+
+  <section>
+    <p>Mесто за креативно изразување:</p>
+    <form>
+      <textarea id="text" class="blogbox" maxlength="500" rows="10" cols="100">
+       </textarea>
+    </form>
+    <div id="comment"></div>
+    <button onclick="updateComment()">Send</button>
+  </section>
+  <section id="2">
+    <div class="pic">
+      <div class="fb-post" data-href="https://www.facebook.com/Zara/photos/a.230803585906/10158696308580907/"
+        data-show-text="true" data-width="">
+        <blockquote cite="https://www.facebook.com/Zara/photos/a.230803585906/10158696308580907/?type=3"
+          class="fb-xfbml-parse-ignore">
+          <p>Special edition scarf made of 100% silk printed with your Zodiac sign https://go.zara/horoscopecollection-f
+          </p>Posted by <a href="https://www.facebook.com/Zara/">ZARA</a> on&nbsp;<a
+            href="https://www.facebook.com/Zara/photos/a.230803585906/10158696308580907/?type=3">Понеделник, 16 ноември
+            2020</a>
+        </blockquote>
+      </div>
+      <div class="fb-post" data-href="https://www.facebook.com/Zara/photos/a.230803585906/10158695239620907/"
+        data-show-text="true" data-width="">
+        <blockquote cite="https://www.facebook.com/Zara/photos/a.230803585906/10158695239620907/?type=3"
+          class="fb-xfbml-parse-ignore">
+          <p>Special edition scarf made of 100% silk printed with your Zodiac sign https://go.zara/horoscopecollection-f
+          </p>Posted by <a href="https://www.facebook.com/Zara/">ZARA</a> on&nbsp;<a
+            href="https://www.facebook.com/Zara/photos/a.230803585906/10158695239620907/?type=3">Понеделник, 16 ноември
+            2020</a>
+        </blockquote>
+      </div>
+    </div>
+    <div class="footer">
+      <p id="demo"></p>
+      <p>Aна Марија &copy; All rights reserved.</p>
+    </div>
+  </section>
+  <script>
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d.getFullYear();
+  </script>
+</body>
