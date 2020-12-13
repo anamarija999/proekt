@@ -31,7 +31,10 @@
     document.getElementById("res").reset()
   }
   function ThankYou(){
-    alert("ВИ БЛАГОДАРАМ ЗА ПОПОЛНУВАЊЕ НА АНКЕТАТА!")
+    var x=document.getElementById("name").value;
+    var y=document.getElementById("surname").value;
+    var text=x + ' ' + y;
+   alert("Ви благодарам за пополнување на анкетата " + text)
     }
 	
 </script>
@@ -49,7 +52,7 @@
       </label></h4>
 
     <h4><label>ПРЕЗИМЕ:
-        <input name="surname" type="text" size="30" maxlength="35" required>
+        <input name="surname" id="surname" type="text" size="30" maxlength="35" required>
       </label></h4>
 
 
@@ -101,7 +104,7 @@
 
     <input type="submit" >
     <input type="button" onclick="res_()" value="reset">
-
+</form>
 </body>
 
 </html>

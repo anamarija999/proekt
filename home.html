@@ -5,10 +5,45 @@
 <head>
   <meta charset="utf-8">
   <title>MY_HOME_PAGE</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script>
+   $(document).ready(function(){
+  $("div>p").mouseover(function(){
+    $("div>p").css("background-color", "lightyellow");
+  });
+  $("div>p").mouseout(function(){
+    $("div>p").css("background-color", "white");
+  });
+});
+
+$(document).ready(function(){
+  $("img").mouseover(function(){
+    $("img").css();
+  });
+  $("img").mouseout(function(){
+    $("img").css("background-color", "white");
+  });
+});
+$(document).ready(function(){
+  $("button").click(function(){
+    $("div>ul").slideToggle();
+  });
+});
+$(document).ready(function(){
+  $("button").click(function(){
+    $("img").animate({
+      height: 'toggle'
+    });
+  });
+});
+
+ </script>
+  </script>
   <script type="text/javascript">
     var name;
     name = window.prompt("Внесете го вашето име:");
-    document.writeln("<h1>Добрe дојде, " + name + " на мојата страна</h1>").innerHTML
+    document.writeln( "<h1 style = 'color: black'>" );
+    document.writeln("Добрe дојде, " + name + " на мојата страна</h1>").innerHTML
   </script>
   <style type="text/css">
     header {
@@ -21,8 +56,8 @@
     }
 
     h1 {
-      color: saddlebrown;
-      -webkit-text-stroke: 2px saddlebrown;
+      color: black;
+      -webkit-text-stroke: 2px black;
       text-align: center;
     }
 
@@ -148,81 +183,57 @@
     a {
       text-decoration: none;
     }
-
-    .open-button {
-      background-color: #555;
-      color: white;
-      padding: 16px 20px;
-      border: none;
-      cursor: pointer;
-      opacity: 0.8;
+    footer {
       position: fixed;
-      bottom: 23px;
-      right: 28px;
-      width: 280px;
-    }
-
-    .open-button {
-      background-color: #555;
-      color: white;
-      padding: 16px 20px;
-      border: none;
-      cursor: pointer;
-      opacity: 0.8;
-      position: fixed;
-      bottom: 23px;
-      right: 28px;
-      width: 280px;
-    }
-
-    .chat-popup {
-      display: none;
-      position: fixed;
+      left: 0;
       bottom: 0;
-      right: 15px;
-      border: 3px solid #f1f1f1;
-      z-index: 9;
-    }
-
-    .form-container {
-      max-width: 300px;
-      padding: 10px;
-      background-color: white;
-    }
-
-    .form-container textarea {
       width: 100%;
-      padding: 15px;
-      margin: 5px 0 22px 0;
-      border: none;
-      background: #f1f1f1;
-      resize: none;
-      min-height: 200px;
+      background-color:lightyellow;
+      color: black;
+      text-align: center;
+      font-weight:bold;
+      font-size: large;
     }
+    
+   
+    
 
-    .form-container textarea:focus {
-      background-color: #ddd;
-      outline: none;
-    }
-
-    .form-container .btn {
-      background-color: #4CAF50;
-      color: white;
-      padding: 16px 20px;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-      margin-bottom: 10px;
-      opacity: 0.8;
-    }
-
-    .form-container .cancel {
-      background-color: red;
-    }
+    
   </style>
 </head>
 
-<body>
+<body onload="startTime()">
+  <script>
+    function startTime() {
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+    
+      m = checkTime(m);
+      s = checkTime(s);
+        if(h<12)
+        {
+        document.getElementById("txt").innerHTML = h + ":" + m + ":" + s + " PM";
+      var t = setTimeout(startTime, 500);
+      }
+      else(h>=12)
+      {
+  
+        document.getElementById("txt").innerHTML = h + ":" + m + ":" + s + " AM";
+      var t = setTimeout(startTime, 500);
+      }
+
+    }
+
+    function checkTime(i) {
+      if (i < 10) {
+        i = "0" + i;
+      }
+      return i;
+    }
+  </script>
+
 
   <header>
     <h3><em>ВИ БЛАГОДАРАМ ЗА ПОСЕТАТА&#10084</em></h3>
@@ -258,33 +269,6 @@
       <p><label><b>&#128172Facebook:</label></b><a href="https://www.facebook.com/anamarija.trajkovska1/"> facebook
           профил</a></p>
       <p><label><b>&#128205Адреса:</label></b>Скопје,Христо Татарчев 47-а</a></p>
-      <button class="open-button" onclick="openForm()">Пишете ми</button>
-
-      <div class="chat-popup" id="myForm">
-        <form action="/action_page.php" class="form-container">
-          <h1>Пораки</h1>
-
-          <label for="msg"><b>Порака</b></label>
-          <textarea placeholder="Type message.." name="msg" required></textarea>
-
-          <button type="submit" class="btn">Прати</button>
-          <button type="button" class="btn cancel" onclick="closeForm()">Затвори</button>
-        </form>
-      </div>
-
-      <script>
-        function openForm() {
-          document.getElementById("myForm").style.display = "block";
-        }
-
-        function closeForm() {
-          document.getElementById("myForm").style.display = "none";
-        }
-      </script>
-      <button onclick="document.getElementById('time').innerHTML=Date()">Колку е часот?</button>
-
-      <p id="time"></p>
-
 
     </div>
     <div class="floated3">
@@ -323,8 +307,10 @@
         <li>Assembly</li>
 
       </ul>
+      <button style="background-color: lightyellow;">КЛИКНИ ЗА МАГИЈА!</button>
     </div>
-    <img src="C:\Users\ana_m\OneDrive\Desktop\4godina\proekt\moja-slika.png" alt="No picture aviable" width="200"
+  
+    <img position="fixed" src="C:\Users\ana_m\OneDrive\Desktop\4godina\proekt\moja-slika.png" alt="No picture aviable" width="200"
       height="300">
 
     </article>
@@ -355,7 +341,9 @@
       </em>
     </p>
   </details>
-
+<footer>
+  <div id="txt"></div>
+</footer>
 </body>
 
 </html>

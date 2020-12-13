@@ -5,9 +5,92 @@
 <head>
   <meta charset="utf-8">
   <title>BLOG</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/mk_MK/sdk.js#xfbml=1&version=v9.0" nonce="GqiN9FNZ"
+    src="https://connect.facebook.net/mk_MK/sdk.js#xfbml=1&version=v9.0" nonce="5tmGBmv8">
+
+    </script>
+  <script type="text/javascript">
+    function myFunction(tmp) {
+      var iframe = document.getElementById("myFrame" + tmp);
+      elmnt.style.display = "none";
+    };
+
+    function dodadi() {
+      var r = confirm("Dali sakate da odite na stranata na ZARA?");
+      if (r == true) {
+        location.href = "https://www.zara.com/mk/"
+      }
+
+    };
+
+    function updateText() {
+      var ime = document.getElementById("test3").value;
+      var prezime = document.getElementById("test4").value;
+      var data = document.getElementById("test5").value;
+      var paragraf = document.getElementById("text").value;
+
+      var txt1 = "<p></p>" + ime + " " + prezime + " " + data;
+      var txt2 = $("<p></p>").text(paragraf);
+      $(document).ready(function () {
+        $("#btn1").onclick(function () {
+          $("#blabla").prepend(txt1, txt2);
+        });
+      });
+      $("#blabla").prepend(txt1, txt2);
+    };
+
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#flip").click(function () {
+        $("#panel").slideToggle("slow");
+      });
+    });
+
+    $(document).ready(function () {
+      $("#btn2").mouseover(function () {
+        $("#blabla ").empty();
+      });
+    });
+
+  </script>
+
   <style>
+    .button {
+      background-color: lightyellow;
+      border: solid;
+      color: crimson;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      transition-duration: 0.4s;
+      margin-left: 18cm;
+    }
+
+    .button2:hover {
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    #panel,
+    #flip {
+      padding: 5px;
+      text-align: center;
+      background-color: lightyellow;
+      border: solid 1px #c3c3c3;
+    }
+
+    #panel {
+      padding: 50px;
+      display: none;
+    }
+
     .footer {
-      position: fixed;
+      position: relative;
       left: 0;
       bottom: 0;
       width: 100%;
@@ -46,78 +129,100 @@
       margin-bottom: 50px;
       margin-top: 50px;
     }
-  </style>
-  <div id="fb-root"></div>
-  <script type="text/javascript" async defer crossorigin="anonymous"
-    src="https://connect.facebook.net/mk_MK/sdk.js#xfbml=1&version=v9.0" nonce="GqiN9FNZ"
-    src="https://connect.facebook.net/mk_MK/sdk.js#xfbml=1&version=v9.0" nonce="5tmGBmv8">
 
-    </script>
-  <script type="text/javascript">
-    function myFunction(tmp) {
-      var iframe = document.getElementById("myFrame" + tmp);
-      elmnt.style.display = "none";
-    };
-
-    function updateComment() {
-     document.getElementById("comments").innerHTML = document.getElementById("text").value;
-    
+    .div1 {
+      background-color: lightyellow;
+      width: 300px;
+      border: 15px solid crimson;
+      padding: 50px;
+      margin: 20px;
+      float: right;
     }
-
-  </script>
-
-  
-
+  </style>
 </head>
 
 <body>
+  <div id="fb-root"></div>
   <header class="h">
     <strong>БЛОГ</strong>
   </header>
-
-  <iframe class="border" id="myFrame" src="https://snestorovska.com/category/reczepti/"
-    style="height:500px;width:100%"></iframe>
-
-
-  <section>
-    <p>Mесто за креативно изразување:</p>
-    <form>
-      <textarea id="text" class="blogbox" maxlength="500" rows="10" cols="100">
-       </textarea>
-    </form>
-    <div id="comment"></div>
-    <button onclick="updateComment()">Send</button>
-  </section>
-  <section id="2">
-    <div class="pic">
-      <div class="fb-post" data-href="https://www.facebook.com/Zara/photos/a.230803585906/10158696308580907/"
-        data-show-text="true" data-width="">
-        <blockquote cite="https://www.facebook.com/Zara/photos/a.230803585906/10158696308580907/?type=3"
-          class="fb-xfbml-parse-ignore">
-          <p>Special edition scarf made of 100% silk printed with your Zodiac sign https://go.zara/horoscopecollection-f
-          </p>Posted by <a href="https://www.facebook.com/Zara/">ZARA</a> on&nbsp;<a
-            href="https://www.facebook.com/Zara/photos/a.230803585906/10158696308580907/?type=3">Понеделник, 16 ноември
-            2020</a>
-        </blockquote>
-      </div>
-      <div class="fb-post" data-href="https://www.facebook.com/Zara/photos/a.230803585906/10158695239620907/"
-        data-show-text="true" data-width="">
-        <blockquote cite="https://www.facebook.com/Zara/photos/a.230803585906/10158695239620907/?type=3"
-          class="fb-xfbml-parse-ignore">
-          <p>Special edition scarf made of 100% silk printed with your Zodiac sign https://go.zara/horoscopecollection-f
-          </p>Posted by <a href="https://www.facebook.com/Zara/">ZARA</a> on&nbsp;<a
-            href="https://www.facebook.com/Zara/photos/a.230803585906/10158695239620907/?type=3">Понеделник, 16 ноември
-            2020</a>
-        </blockquote>
-      </div>
+  <br>
+  <input id="myInput" type="text" placeholder="Search.." style="border:solid">
+  <br>
+  <div id="myDIV">
+    <br>
+    <div id="flip" style="font-size:bold" style="text-size:x-large">Kликни за содржината на оваа страна!</div>
+    <div id="panel">Во овој дел можете слободно да се изразите и да си напишете нешто од ваша тема на интерес.<br
+        id="panel">
+      Имате и некои интересни рецепти и совети за патување.<br id="panel">
+      Исто така можете да ја посетите и страната на ZARA и да си погледате интересни работи!
+      <br id="panel"> Hint:за бришење на коментарите наравете hover на копчето Delete comment :)
     </div>
-    <div class="footer">
-      <p id="demo"></p>
-      <p>Aна Марија &copy; All rights reserved.</p>
-    </div>
+
+    <iframe class="border" id="myFrame" src="https://snestorovska.com/category/reczepti/"
+      style="height:500px;width:100%"></iframe>
+
+    <section id="2">
+      <div>
+
+        <button class="button button2:hover" onclick="dodadi()">колекција ZARA</button>
+      </div>
+      <div class="pic">
+        <div class="fb-post" data-href="https://www.facebook.com/Zara/photos/a.230803585906/10158696308580907/"
+          data-show-text="true" data-width="">
+          <blockquote cite="https://www.facebook.com/Zara/photos/a.230803585906/10158696308580907/?type=3"
+            class="fb-xfbml-parse-ignore">
+            <p>Special edition scarf made of 100% silk printed with your Zodiac sign
+              https://go.zara/horoscopecollection-f
+            </p>Posted by <a href="https://www.facebook.com/Zara/">ZARA</a> on&nbsp;<a
+              href="https://www.facebook.com/Zara/photos/a.230803585906/10158696308580907/?type=3">Понеделник, 16
+              ноември
+              2020</a>
+          </blockquote>
+        </div>
+        <div class="fb-post" data-href="https://www.facebook.com/Zara/photos/a.230803585906/10158695239620907/"
+          data-show-text="true" data-width="">
+          <blockquote cite="https://www.facebook.com/Zara/photos/a.230803585906/10158695239620907/?type=3"
+            class="fb-xfbml-parse-ignore">
+            <p>Special edition scarf made of 100% silk printed with your Zodiac sign
+              https://go.zara/horoscopecollection-f
+            </p>Posted by <a href="https://www.facebook.com/Zara/">ZARA</a> on&nbsp;<a
+              href="https://www.facebook.com/Zara/photos/a.230803585906/10158695239620907/?type=3">Понеделник, 16
+              ноември
+              2020</a>
+          </blockquote>
+        </div>
+      </div>
+
+      <div id="blabla" class="div1">
+      </div>
+
+      <fieldset style="background-color: lightyellow;">
+        <h3><em>Mесто за креативно изразување:</em></h3>
+        <p>Име: <input type="text" id="test3"></p>
+        <p>Презиме: <input type="text" id="test4"></p>
+        <p>Дата: <input type="text" id="test5" value="DD/MM/YY"></p>
+        <section>
+          <form>
+            <textarea id="text" class="blogbox" maxlength="500" rows="10" cols="100">
+         </textarea>
+          </form>
+          <button id="btn2" style="float: left;">Delete comments</button>
+        </section>
+
+        <button id="btn1" onclick="updateText()">Submit</button>
+      </fieldset>
+
+  </div>
+  <div class="footer">
+    <p id="demo"></p>
+    <p>Aна Марија &copy; All rights reserved.</p>
+  </div>
   </section>
   <script>
     var d = new Date();
     document.getElementById("demo").innerHTML = d.getFullYear();
   </script>
 </body>
+
+</html>
