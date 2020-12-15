@@ -214,13 +214,13 @@ $(document).ready(function(){
       s = checkTime(s);
         if(h<12)
         {
-        document.getElementById("txt").innerHTML = h + ":" + m + ":" + s + " PM";
+        document.getElementById("txt").innerHTML = h + ":" + m + ":" + s + " AM";
       var t = setTimeout(startTime, 500);
       }
       else(h>=12)
       {
   
-        document.getElementById("txt").innerHTML = h + ":" + m + ":" + s + " AM";
+        document.getElementById("txt").innerHTML = h + ":" + m + ":" + s + " PM";
       var t = setTimeout(startTime, 500);
       }
 

@@ -11,8 +11,9 @@ function myFunction(tmpId) {
     {
         var nov_komentar = document.createElement("ul");
         var t=new Date();
-        var time= t.getFullYear()
-     var x = time + " " + name + " : " + komentar ;
+        var time= t.getFullYear();
+        var mesec=t.getMonth() + 1;
+     var x = "(" + time + "."+ mesec + ")"+ " " + name + " : " + komentar ;
      nov_komentar.innerHTML =x;
     document.getElementById("myUL"+tmpId).appendChild(nov_komentar);
     }
