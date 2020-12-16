@@ -25,8 +25,11 @@
       </a>
       <div class="desc"><em>Бадемов колач со теа.</em></div>
 
-      <button class="button" type="button" onClick="onClick(1)">Like</button>
-      <p class="p">Likes: <a id="clicks1">0</a></p>
+      <button class="button" onclick="clickCounter('result1', this.innerHTML)" type="button"><b>Like</b></button>
+      <br><div id="result1"></div>
+      
+      
+      
       <input type="text" onfocusin="onfocus(this)" id="text1" value="">
       <button onclick="myFunction(1)">Comment</button>
       <ul id="myUL1">
@@ -41,8 +44,8 @@
       </a>
       <div class="desc"><em>Oхрид и сонце.</em></div>
 
-      <button class="button" type="button" onClick="onClick(2)">Like</button>
-      <p class="p">Likes: <a id="clicks2">0</a></p>
+      <button class="button" onclick="clickCounter('result2', this.innerHTML)" type="button"><b>Like</b></button>
+      <br><div id="result2"></div>
       <input type="text" onfocusin="onfocus(this)" id="text2" value="">
       <button onclick="myFunction(2)">Comment</button>
       <ul id="myUL2">
@@ -56,8 +59,9 @@
       </a>
       <div class="desc"><em>Факултет.</em></div>
 
-      <button class="button" type="button" onClick="onClick(3)">Like</button>
-      <p class="p">Likes: <a id="clicks3">0</a></p>
+      <button class="button" onclick="clickCounter('result3', this.innerHTML)" type="button"><b>Like</b></button>
+      <br><div id="result3"></div>
+    
       <input type="text" onfocusin="funkcija(this)" id="text3" value="">
       <button onclick="myFunction(3)">Comment</button>
       <ul id="myUL3">
@@ -72,8 +76,9 @@
 
       <div class="desc"><em>Последното патување.</em></div>
 
-      <button class="button" type="button" onClick="onClick(4)">Like</button>
-      <p class="p">Likes: <a id="clicks4">0</a></p>
+      <button class="button" onclick="clickCounter('result4', this.innerHTML)" type="button"><b>Like</b></button>
+     <br> <div id="result4"></div>
+      
       <input type="text" onfocusin="funkcija(this)" id="text4" value="">
       <button onclick="myFunction(4)">Comment</button>
       <ul id="myUL4">

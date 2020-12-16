@@ -1,8 +1,3 @@
-function onClick(postId) {
-
-    document.getElementById("clicks" + postId).innerHTML = parseInt(document.getElementById("clicks" + postId).innerHTML) + 1
-};
-
 var name = window.prompt("Внесете го вашето име:");
 function myFunction(tmpId) {
 
@@ -23,3 +18,34 @@ function myFunction(tmpId) {
     }
     
 };
+
+function clickCounter(id, label) {
+    var node = document.getElementById(id);
+    if (!node) {
+        return console.error('Element #' + id + ' not found');
+    }
+
+    if (window.localStorage === undefined) {
+        node.innerHTML = 'Sorry, your browser does not support web storage...';
+    } else {
+        var key = 'clickcount_' + id;
+        localStorage[key] = (++localStorage[key] || 1);
+        node.innerHTML = 'Likes: ' + ' ' + localStorage[key] ;
+    }
+}
+
+function clickCounter(id, label) {
+    var node = document.getElementById(id);
+    if (!node) {
+        return console.error('Element #' + id + ' not found');
+    }
+
+    if (window.localStorage === undefined) {
+        node.innerHTML = 'Sorry, your browser does not support web storage...';
+    } else {
+        var key = 'clickcount_' + id;
+        localStorage[key] = (++localStorage[key] || 1);
+        node.innerHTML = 'Likes: ' + ' ' + localStorage[key] ;
+    }
+}
+
